@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode10
+
+
+script:
+# Build Travis project and run tests
+- xcodebuild -project ShareClient.xcodeproj -scheme ShareClient build -destination name="iPhone SE" test
