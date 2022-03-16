@@ -324,9 +324,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 432B0E9C1CDFC3C50045347B /* Build configuration list for PBXNativeTarget "ShareClient" */;
 			buildPhases = (
+				432B0E851CDFC3C50045347B /* Headers */,
 				432B0E831CDFC3C50045347B /* Sources */,
 				432B0E841CDFC3C50045347B /* Frameworks */,
-				432B0E851CDFC3C50045347B /* Headers */,
 				432B0E861CDFC3C50045347B /* Resources */,
 			);
 			buildRules = (
@@ -361,9 +361,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43A8EC87210E664300A81379 /* Build configuration list for PBXNativeTarget "ShareClientUI" */;
 			buildPhases = (
+				43A8EC7F210E664300A81379 /* Headers */,
 				43A8EC7D210E664300A81379 /* Sources */,
 				43A8EC7E210E664300A81379 /* Frameworks */,
-				43A8EC7F210E664300A81379 /* Headers */,
 				43A8EC80210E664300A81379 /* Resources */,
 			);
 			buildRules = (
