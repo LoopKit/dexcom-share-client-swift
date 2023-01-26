@@ -5,7 +5,7 @@
 "Cancel" = "Annuleer";
 
 /* Title of cell to set credentials */
-"Credentials" = "Toegang gegevens";
+"Credentials" = "Toegangsgegevens";
 
 /* Title describing glucose date */
 "Date" = "Datum";
@@ -18,7 +18,7 @@
 "Glucose" = "Glucose";
 
 /* Section title for latest glucose reading */
-"Latest Reading" = "Laatste meting";
+"Latest Reading" = "Laatste Meting";
 
 /* Outside US share server option title */
 "Outside US" = "Buiten US";

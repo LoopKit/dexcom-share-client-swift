@@ -5,3 +5,6 @@
 /* Sensor state description for the non-valid state */
 "Needs Attention" = "Требует внимания";
 
+/* Sensor state description for the valid state */
+"OK" = "OK";
+

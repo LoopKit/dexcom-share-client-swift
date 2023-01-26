@@ -3,8 +3,8 @@
 "Dexcom Share" = "Dexcom Share";
 
 /* Sensor state description for the non-valid state */
-"Needs Attention" = "Aandacht vereist";
+"Needs Attention" = "Aandacht Nodig";
 
 /* Sensor state description for the valid state */
-"OK" = "Ok";
+"OK" = "OK";
 

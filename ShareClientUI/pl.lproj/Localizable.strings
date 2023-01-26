@@ -29,6 +29,9 @@
 /* The title of the Dexcom share server URL credential */
 "Server" = "Serwer";
 
+/* Title describing glucose trend */
+"Trend" = "Trend";
+
 /* U.S. share server option title */
 "US" = "USA";
 
