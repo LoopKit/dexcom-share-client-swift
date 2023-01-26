@@ -26,9 +26,6 @@
 /* The title of the Dexcom share password credential */
 "Password" = "Parola d'ordine";
 
-/* The title of the Dexcom share server URL credential */
-"Server" = "Server";
-
 /* Title describing glucose trend */
 "Trend" = "Andamento";
 

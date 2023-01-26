@@ -21,7 +21,7 @@
 "Latest Reading" = "Dernière mesure";
 
 /* Outside US share server option title */
-"Outside US" = "À l'extérieur des É.-U.";
+"Outside US" = "À l'extérieur des Etats-Unis";
 
 /* The title of the Dexcom share password credential */
 "Password" = "Mot de passe";
@@ -30,10 +30,10 @@
 "Server" = "Serveur";
 
 /* Title describing glucose trend */
-"Trend" = "Trend";
+"Trend" = "Tendance";
 
 /* U.S. share server option title */
-"US" = "É.-U.";
+"US" = "Etats-Unis";
 
 /* The title of the Dexcom share username credential */
 "Username" = "Nom d'utilisateur";

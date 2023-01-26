@@ -5,7 +5,7 @@
 "Cancel" = "Kumoa";
 
 /* Title of cell to set credentials */
-"Credentials" = "Tunnukset";
+"Credentials" = "Käyttäjätunnukset";
 
 /* Title describing glucose date */
 "Date" = "Aika";

@@ -5,7 +5,7 @@
 "Cancel" = "Renunță";
 
 /* Title of cell to set credentials */
-"Credentials" = "Autentificare";
+"Credentials" = "Date de autentificare";
 
 /* Title describing glucose date */
 "Date" = "Data";
@@ -15,7 +15,7 @@
 "Delete CGM" = "Șterge CGM";
 
 /* Title describing glucose value */
-"Glucose" = "Glucoză";
+"Glucose" = "Glicemie";
 
 /* Section title for latest glucose reading */
 "Latest Reading" = "Ultima citire";
@@ -30,7 +30,7 @@
 "Server" = "Server";
 
 /* Title describing glucose trend */
-"Trend" = "Trend";
+"Trend" = "Tendință";
 
 /* U.S. share server option title */
 "US" = "SUA";
