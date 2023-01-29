@@ -32,6 +32,9 @@
 /* Title describing glucose trend */
 "Trend" = "Tendência";
 
+/* U.S. share server option title */
+"US" = "US";
+
 /* The title of the Dexcom share username credential */
 "Username" = "Usuário";
 
