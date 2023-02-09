@@ -21,10 +21,10 @@
 "Latest Reading" = "Laatste Meting";
 
 /* Outside US share server option title */
-"Outside US" = "Buiten US";
+"Outside US" = "Buiten de VS";
 
 /* The title of the Dexcom share password credential */
-"Password" = "Paswoord";
+"Password" = "Wachtwoord";
 
 /* The title of the Dexcom share server URL credential */
 "Server" = "Server";
@@ -33,7 +33,7 @@
 "Trend" = "Trend";
 
 /* U.S. share server option title */
-"US" = "US";
+"US" = "VS";
 
 /* The title of the Dexcom share username credential */
 "Username" = "Gebruikersnaam";

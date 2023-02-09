@@ -2,9 +2,6 @@
    Title for the CGMManager option */
 "Dexcom Share" = "Dexcom Share";
 
-/* Sensor state description for the non-valid state */
-"Needs Attention" = "Handling påkrævet";
-
 /* Sensor state description for the valid state */
 "OK" = "OK";
 
