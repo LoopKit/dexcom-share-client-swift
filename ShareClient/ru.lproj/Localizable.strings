@@ -1,6 +1,6 @@
 /* The title of the Dexcom Share service
    Title for the CGMManager option */
-"Dexcom Share" = "Декском Шеар";
+"Dexcom Share" = "Dexcom Share";
 
 /* Sensor state description for the non-valid state */
 "Needs Attention" = "Требует внимания";
