@@ -11,7 +11,7 @@ import HealthKit
 
 public class ShareClientManager: CGMManager {
 
-    public static let pluginIdentifier = "DexShareClient"
+    public let pluginIdentifier = "DexShareClient"
 
     public init() {
         shareService = ShareService(keychainManager: keychain)
