@@ -7,7 +7,7 @@
 
 import UIKit
 import Combine
-import HealthKit
+import LoopAlgorithm
 import LoopKit
 import LoopKitUI
 import ShareClient
@@ -20,7 +20,7 @@ public class ShareClientSettingsViewController: UITableViewController {
 
     private lazy var cancellables = Set<AnyCancellable>()
 
-    private var glucoseUnit: HKUnit {
+    private var glucoseUnit: LoopUnit {
         displayGlucosePreference.unit
     }
 

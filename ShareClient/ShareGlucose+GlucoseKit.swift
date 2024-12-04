@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import HealthKit
 import LoopKit
 import LoopAlgorithm
 
@@ -21,8 +20,8 @@ extension ShareGlucose: GlucoseValue {
         return timestamp
     }
 
-    public var quantity: HKQuantity {
-        return HKQuantity(unit: .milligramsPerDeciliter, doubleValue: Double(min(max(glucose, GlucoseLimits.minimum), GlucoseLimits.maximum)))
+    public var quantity: LoopQuantity {
+        return LoopQuantity(unit: .milligramsPerDeciliter, doubleValue: Double(min(max(glucose, GlucoseLimits.minimum), GlucoseLimits.maximum)))
     }
 }
 
@@ -36,7 +35,7 @@ extension ShareGlucose: GlucoseDisplayable {
         return GlucoseTrend(rawValue: Int(trend))
     }
 
-    public var trendRate: HKQuantity? {
+    public var trendRate: LoopQuantity? {
         return nil
     }
 
