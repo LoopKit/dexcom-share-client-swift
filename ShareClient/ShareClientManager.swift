@@ -10,6 +10,12 @@ import HealthKit
 
 
 public class ShareClientManager: CGMManager {
+    public var inSignalLoss: Bool = false
+    
+    public var isInoperable: Bool {
+        cgmManagerStatus.isInoperable
+    }
+    
 
     public let pluginIdentifier = "DexShareClient"
 
