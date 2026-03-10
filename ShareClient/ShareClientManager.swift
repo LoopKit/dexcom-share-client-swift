@@ -10,8 +10,14 @@ import HealthKit
 
 
 public class ShareClientManager: CGMManager {
+    public var inSignalLoss: Bool = false
+    
+    public var isInoperable: Bool {
+        cgmManagerStatus.isInoperable
+    }
+    
 
-    public static let pluginIdentifier = "DexShareClient"
+    public let pluginIdentifier = "DexShareClient"
 
     public init() {
         shareService = ShareService(keychainManager: keychain)
@@ -133,9 +139,7 @@ public class ShareClientManager: CGMManager {
 
 // MARK: - AlertResponder implementation
 extension ShareClientManager {
-    public func acknowledgeAlert(alertIdentifier: Alert.AlertIdentifier, completion: @escaping (Error?) -> Void) {
-        completion(nil)
-    }
+    public func acknowledgeAlert(alertIdentifier: LoopKit.Alert.AlertIdentifier) async throws { }
 }
 
 // MARK: - AlertSoundVendor implementation
