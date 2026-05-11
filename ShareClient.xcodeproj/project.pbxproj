@@ -161,7 +161,6 @@
 			children = (
 				B66D1FBC2E6A8FFF00471149 /* Localizable.xcstrings */,
 				4325E9CE210E6A0A00969CE5 /* HKUnit.swift */,
-				43AB5125213315D300B3D58D /* Localizable.strings */,
 				43C418AE1CE0488900405B6A /* ShareClient.swift */,
 				43A8EC9C210E68CE00A81379 /* ShareClientManager.swift */,
 				43A8EC9A210E68BA00A81379 /* ShareGlucose+GlucoseKit.swift */,
