@@ -27,6 +27,6 @@
 	<key>com.loopkit.Loop.CGMManagerIdentifier</key>
 	<string>DexShareClient</string>
 	<key>com.loopkit.Loop.DeviceManufacturer</key>
-	<string>Dexcom</string>
+	<string>Remote</string>
 </dict>
 </plist>
