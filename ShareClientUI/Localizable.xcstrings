@@ -28,6 +28,12 @@
             "value" : "APAC"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "APAC"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -858,7 +864,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laatste Meting"
+            "value" : "Laatst gelezen meting"
           }
         },
         "pl" : {
@@ -1669,6 +1675,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verdensomspennende"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wereldwijd"
           }
         },
         "ro" : {
