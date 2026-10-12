@@ -9,7 +9,7 @@ import LoopKitUI
 import ShareClient
 
 
-extension ShareService: ServiceAuthenticationUI {
+extension ShareService: @retroactive ServiceAuthenticationUI {
     public var credentialFormFieldHelperMessage: String? {
         return nil
     }
