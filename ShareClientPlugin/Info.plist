@@ -28,5 +28,7 @@
 	<string>DexShareClient</string>
 	<key>com.loopkit.Loop.DeviceManufacturer</key>
 	<string>Remote</string>
+	<key>com.loopkit.Loop.PluginSubtitle</key>
+	<string>Readings from Dexcom Share servers</string>
 </dict>
 </plist>
