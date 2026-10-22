@@ -28,10 +28,22 @@
             "value" : "APAC"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "APAC"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "APAC"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "亚太地区 （APAC）"
           }
         }
       }
@@ -120,7 +132,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunteți sigur că doriți să ștergeți acest CGM?"
+            "value" : "Sunteți sigur că doriți să ștergeți acest senzor de glicemie?"
           }
         },
         "ru" : {
@@ -212,12 +224,6 @@
             "value" : "לא"
           }
         },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "निरस्त"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -257,7 +263,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Renunță"
+            "value" : "Anulați"
           }
         },
         "ru" : {
@@ -620,7 +626,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ștergeți CGM"
+            "value" : "Ștergeți senzor de glicemie"
           }
         },
         "ru" : {
@@ -656,7 +662,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "趋势"
+            "value" : "删除 CGM"
           }
         }
       }
@@ -710,12 +716,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "גלוקוז"
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "शुगर"
           }
         },
         "it" : {
@@ -864,7 +864,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laatste Meting"
+            "value" : "Laatst gelezen meting"
           }
         },
         "pl" : {
@@ -1332,12 +1332,6 @@
             "value" : "מגמה"
           }
         },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ट्रेंड"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1683,10 +1677,22 @@
             "value" : "Verdensomspennende"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wereldwijd"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "În întreaga lume"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全球"
           }
         }
       }
