@@ -375,10 +375,9 @@
 				sk,
 				ar,
 				cs,
-				hi,
-				ce,
 				hu,
 				uk,
+				ko,
 			);
 			mainGroup = 432B0E7E1CDFC3C50045347B;
 			productRefGroup = 432B0E891CDFC3C50045347B /* Products */;
