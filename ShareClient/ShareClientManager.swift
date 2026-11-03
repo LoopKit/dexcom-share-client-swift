@@ -111,12 +111,13 @@ public class ShareClientManager: CGMManager {
             let startDate = self.delegate.call { (delegate) -> Date? in
                 return delegate?.startDateToFilterNewData(for: self)?.addingTimeInterval(TimeInterval(minutes: 1))
             }
-            let newGlucose = glucose.filterDateRange(startDate, nil)
+            // Share returns newest first; filterDateRange's binary search needs ascending order.
+            let newGlucose = glucose.sorted { $0.startDate < $1.startDate }.filterDateRange(startDate, nil)
             let newSamples = newGlucose.filter({ $0.isStateValid }).map {
                 return NewGlucoseSample(date: $0.startDate, quantity: $0.quantity, condition: $0.condition, trend: $0.trendType, trendRate: $0.trendRate, isDisplayOnly: false, wasUserEntered: false, syncIdentifier: "\(Int($0.startDate.timeIntervalSince1970))", device: self.device)
             }
 
-            self.latestBackfill = newGlucose.first
+            self.latestBackfill = newGlucose.last
 
             if newSamples.count > 0 {
                 completion(.newData(newSamples))
