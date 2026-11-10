@@ -54,15 +54,6 @@ public class ShareClientManager: CGMManager {
         }
     }
 
-    public var delegateQueue: DispatchQueue! {
-        get {
-            return delegate.queue
-        }
-        set {
-            delegate.queue = newValue
-        }
-    }
-
     public let delegate = WeakSynchronizedDelegate<CGMManagerDelegate>()
 
     public let providesBLEHeartbeat = false
@@ -107,22 +98,24 @@ public class ShareClientManager: CGMManager {
                 return
             }
 
-            // Ignore glucose values that are up to a minute newer than our previous value, to account for possible time shifting in Share data
-            let startDate = self.delegate.call { (delegate) -> Date? in
-                return delegate?.startDateToFilterNewData(for: self)?.addingTimeInterval(TimeInterval(minutes: 1))
-            }
-            // Share returns newest first; filterDateRange's binary search needs ascending order.
-            let newGlucose = glucose.sorted { $0.startDate < $1.startDate }.filterDateRange(startDate, nil)
-            let newSamples = newGlucose.filter({ $0.isStateValid }).map {
-                return NewGlucoseSample(date: $0.startDate, quantity: $0.quantity, condition: $0.condition, trend: $0.trendType, trendRate: $0.trendRate, isDisplayOnly: false, wasUserEntered: false, syncIdentifier: "\(Int($0.startDate.timeIntervalSince1970))", device: self.device)
-            }
+            Task {
+                // Ignore glucose values that are up to a minute newer than our previous value, to account for possible time shifting in Share data
+                let startDate = await self.delegate.call { (delegate) -> Date? in
+                    return await delegate?.startDateToFilterNewData(for: self)?.addingTimeInterval(TimeInterval(minutes: 1))
+                }
+                // Share returns newest first; filterDateRange's binary search needs ascending order.
+                let newGlucose = glucose.sorted { $0.startDate < $1.startDate }.filterDateRange(startDate, nil)
+                let newSamples = newGlucose.filter({ $0.isStateValid }).map {
+                    return NewGlucoseSample(date: $0.startDate, quantity: $0.quantity, condition: $0.condition, trend: $0.trendType, trendRate: $0.trendRate, isDisplayOnly: false, wasUserEntered: false, syncIdentifier: "\(Int($0.startDate.timeIntervalSince1970))", device: self.device)
+                }
 
-            self.latestBackfill = newGlucose.last
+                self.latestBackfill = newGlucose.last
 
-            if newSamples.count > 0 {
-                completion(.newData(newSamples))
-            } else {
-                completion(.noData)
+                if newSamples.count > 0 {
+                    completion(.newData(newSamples))
+                } else {
+                    completion(.noData)
+                }
             }
         }
     }
